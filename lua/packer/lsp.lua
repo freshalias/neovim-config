@@ -8,12 +8,18 @@ require("mason").setup({
         }
     }
 })
+
+
+
 -- mason-lspconfig
 require("mason-lspconfig").setup {
   -- A list of servers to automatically install if they're not already installed. Example: { "rust_analyzer@nightly", "lua_ls" }
   -- This setting has no relation with the `automatic_installation` setting.
-  ensure_installed = {"svls","clangd","lua_ls"},
+  ensure_installed = {"clangd","lua_ls","svls"},
 }
+
+
+
 -- nvim-lspconfig
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -66,6 +72,8 @@ require('lspconfig')['rust_analyzer'].setup{
     flags = lsp_flags,
     -- Server-specific settings...
     settings = {
-      ["slvs"] = {}
+      ["slvs"] = {
+    
+      }
     }
 }
