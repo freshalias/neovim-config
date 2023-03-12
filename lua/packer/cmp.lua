@@ -69,3 +69,6 @@ local cmp = require'cmp'
   require('lspconfig').svls.setup {
     capabilities = capabilities
  }
+  require('lspconfig').marksman.setup {
+    capabilities = capabilities
+ }

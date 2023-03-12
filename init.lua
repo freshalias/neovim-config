@@ -8,4 +8,3 @@ require("packer.tree")
 require("packer.lsp")
 require("packer.cmp")
 -- to solve vimL question
-
